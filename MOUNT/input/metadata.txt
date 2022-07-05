@@ -1,0 +1,5 @@
+sample_id	condition   #the two columns are tab separated and the 'condition' column must have a control group and a case group. Case can be renamed to your liking. Here's an example:
+ENCFF239POR	control
+ENCFF250AJS	control
+ENCFF301JRH	treated
+ENCFF803NZJ	treated

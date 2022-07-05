@@ -1,0 +1,157 @@
+MOUNT/
+├── config.sh
+├── index
+│   ├── kallisto-index
+│   └── starindex
+│       ├── chrLength.txt
+│       ├── chrNameLength.txt
+│       ├── chrName.txt
+│       ├── chrStart.txt
+│       ├── exonGeTrInfo.tab
+│       ├── exonInfo.tab
+│       ├── geneInfo.tab
+│       ├── Genome
+│       ├── genomeParameters.txt
+│       ├── Log.out
+│       ├── SA
+│       ├── SAindex
+│       ├── sjdbInfo.txt
+│       ├── sjdbList.fromGTF.out.tab
+│       ├── sjdbList.out.tab
+│       └── transcriptInfo.tab
+├── input
+│   ├── adapters_pe.fa
+│   ├── ENCFF239POR_1.fastq
+│   ├── ENCFF239POR_2.fastq
+│   ├── ENCFF250AJS_1.fastq
+│   ├── ENCFF250AJS_2.fastq
+│   ├── ENCFF301JRH_1.fastq
+│   ├── ENCFF301JRH_2.fastq
+│   ├── ENCFF803NZJ_1.fastq
+│   ├── ENCFF803NZJ_2.fastq
+│   ├── gencode.v36.annotation.dexseq.gff
+│   ├── gencode.v36.annotation.gff3
+│   ├── gencode.v36.annotation.gtf
+│   ├── gencode.v36.transcripts.fa
+│   ├── GRCh38.primary_assembly.genome.fa
+│   ├── majiq_build_config.ini
+│   └── metadata.txt
+└── output
+    ├── ENCFF239POR_r1_trimmed.fastq
+    ├── ENCFF239POR_r1_unpaired.fastq
+    ├── ENCFF239POR_r2_trimmed.fastq
+    ├── ENCFF239POR_r2_unpaired.fastq
+    ├── ENCFF250AJS_r1_trimmed.fastq
+    ├── ENCFF250AJS_r1_unpaired.fastq
+    ├── ENCFF250AJS_r2_trimmed.fastq
+    ├── ENCFF250AJS_r2_unpaired.fastq
+    ├── ENCFF301JRH_r1_trimmed.fastq
+    ├── ENCFF301JRH_r1_unpaired.fastq
+    ├── ENCFF301JRH_r2_trimmed.fastq
+    ├── ENCFF301JRH_r2_unpaired.fastq
+    ├── ENCFF803NZJ_r1_trimmed.fastq
+    ├── ENCFF803NZJ_r1_unpaired.fastq
+    ├── ENCFF803NZJ_r2_trimmed.fastq
+    ├── ENCFF803NZJ_r2_unpaired.fastq
+    ├── exon_counts
+    │   ├── dexs_dexseq.csv
+    │   ├── dxr1.RData
+    │   ├── ENCFF239POR_exon_counts.txt
+    │   ├── ENCFF250AJS_exon_counts.txt
+    │   ├── ENCFF301JRH_exon_counts.txt
+    │   └── ENCFF803NZJ_exon_counts.txt
+    ├── gene_counts
+    │   ├── dds.RData
+    │   ├── degs_deseq2.txt
+    │   ├── ENCFF239POR-Aligned.sortedByCoord.out.bam_raw_count_matrix.txt
+    │   ├── ENCFF250AJS-Aligned.sortedByCoord.out.bam_raw_count_matrix.txt
+    │   ├── ENCFF301JRH-Aligned.sortedByCoord.out.bam_raw_count_matrix.txt
+    │   └── ENCFF803NZJ-Aligned.sortedByCoord.out.bam_raw_count_matrix.txt
+    ├── MAJIQ
+    │   ├── build
+    │   │   ├── ENCFF239POR-Aligned.sortedByCoord.out.majiq
+    │   │   ├── ENCFF239POR-Aligned.sortedByCoord.out.sj
+    │   │   ├── ENCFF250AJS-Aligned.sortedByCoord.out.majiq
+    │   │   ├── ENCFF250AJS-Aligned.sortedByCoord.out.sj
+    │   │   ├── ENCFF301JRH-Aligned.sortedByCoord.out.majiq
+    │   │   ├── ENCFF301JRH-Aligned.sortedByCoord.out.sj
+    │   │   ├── ENCFF803NZJ-Aligned.sortedByCoord.out.majiq
+    │   │   ├── ENCFF803NZJ-Aligned.sortedByCoord.out.sj
+    │   │   ├── majiq.log
+    │   │   └── splicegraph.sql
+    │   ├── config.txt
+    │   ├── ENCFF239POR
+    │   │   ├── psi
+    │   │   │   ├── BAM.psi.tsv
+    │   │   │   ├── BAM.psi.voila
+    │   │   │   └── psi_majiq.log
+    │   │   ├── voila_results_all.tsv
+    │   │   └── voila_results.tsv
+    │   ├── ENCFF250AJS
+    │   │   ├── psi
+    │   │   │   ├── BAM.psi.tsv
+    │   │   │   ├── BAM.psi.voila
+    │   │   │   └── psi_majiq.log
+    │   │   ├── voila_results_all.tsv
+    │   │   └── voila_results.tsv
+    │   ├── ENCFF301JRH
+    │   │   ├── psi
+    │   │   │   ├── BAM.psi.tsv
+    │   │   │   ├── BAM.psi.voila
+    │   │   │   └── psi_majiq.log
+    │   │   ├── voila_results_all.tsv
+    │   │   └── voila_results.tsv
+    │   └── ENCFF803NZJ
+    │       ├── psi
+    │       │   ├── BAM.psi.tsv
+    │       │   ├── BAM.psi.voila
+    │       │   └── psi_majiq.log
+    │       ├── voila_results_all.tsv
+    │       └── voila_results.tsv
+    ├── pseudocounts
+    │   ├── ENCFF239POR
+    │   │   ├── abundance.h5
+    │   │   ├── abundance.tsv
+    │   │   └── run_info.json
+    │   ├── ENCFF250AJS
+    │   │   ├── abundance.h5
+    │   │   ├── abundance.tsv
+    │   │   └── run_info.json
+    │   ├── ENCFF301JRH
+    │   │   ├── abundance.h5
+    │   │   ├── abundance.tsv
+    │   │   └── run_info.json
+    │   ├── ENCFF803NZJ
+    │   │   ├── abundance.h5
+    │   │   ├── abundance.tsv
+    │   │   └── run_info.json
+    │   ├── exampleSwitchListAnalyzed.RData
+    │   ├── isoform_signifcant_genes.txt
+    │   └── isoform_signifcant_switches.txt
+    └── STAR
+        ├── ENCFF239POR-Aligned.sortedByCoord.out.bam
+        ├── ENCFF239POR-Aligned.sortedByCoord.out.bam.bai
+        ├── ENCFF239POR-Log.final.out
+        ├── ENCFF239POR-Log.out
+        ├── ENCFF239POR-Log.progress.out
+        ├── ENCFF239POR-SJ.out.tab
+        ├── ENCFF250AJS-Aligned.sortedByCoord.out.bam
+        ├── ENCFF250AJS-Aligned.sortedByCoord.out.bam.bai
+        ├── ENCFF250AJS-Log.final.out
+        ├── ENCFF250AJS-Log.out
+        ├── ENCFF250AJS-Log.progress.out
+        ├── ENCFF250AJS-SJ.out.tab
+        ├── ENCFF301JRH-Aligned.sortedByCoord.out.bam
+        ├── ENCFF301JRH-Aligned.sortedByCoord.out.bam.bai
+        ├── ENCFF301JRH-Log.final.out
+        ├── ENCFF301JRH-Log.out
+        ├── ENCFF301JRH-Log.progress.out
+        ├── ENCFF301JRH-SJ.out.tab
+        ├── ENCFF803NZJ-Aligned.sortedByCoord.out.bam
+        ├── ENCFF803NZJ-Aligned.sortedByCoord.out.bam.bai
+        ├── ENCFF803NZJ-Log.final.out
+        ├── ENCFF803NZJ-Log.out
+        ├── ENCFF803NZJ-Log.progress.out
+        └── ENCFF803NZJ-SJ.out.tab
+
+22 directories, 132 files
