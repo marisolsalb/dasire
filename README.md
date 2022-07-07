@@ -54,4 +54,6 @@ The pipeline uses the following software versions:
 - rsubread:2.8.1
 
 To start the DASiRe pipeline, please run the following command in this git's main directory.
-`docker run -v $(pwd)/MOUNT:/MOUNT --user $(id -u):$(id -g) --name 'dasire-preprocessing' --rm marisalb/dasire:client`
+```
+docker run -v $(pwd)/MOUNT:/MOUNT --user $(id -u):$(id -g) --name 'dasire-preprocessing' --rm marisalb/dasire:client
+```
