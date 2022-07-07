@@ -12,5 +12,5 @@ transcripts_fasta=/MOUNT/input/gencode.v36.transcripts.fa
 metadata=/MOUNT/input/metadata.txt
 
 
-#optional
+#depreciating 
 fragment_length=170
