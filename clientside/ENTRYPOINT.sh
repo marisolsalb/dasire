@@ -26,10 +26,10 @@ wait
 ! test -d index && mkdir index
 ! test -d output && mkdir output
 
-# Building indeces to cache [ Duration: 1.5 hours (on Human genome)]
+# Building indices to cache [ Duration: 1.5 hours (on Human genome)]
 # ---------------------------------------------------------------------------------------------------------
 echo "###################"
-echo "##### DASiRe Step 1 of 7: Building indeces for STAR and Kallisto"
+echo "##### DASiRe Step 1 of 7: Building indices for STAR and Kallisto"
 echo "###################"
 # Building Kallisto's index
 if ! test -f /MOUNT/index/kallisto-index

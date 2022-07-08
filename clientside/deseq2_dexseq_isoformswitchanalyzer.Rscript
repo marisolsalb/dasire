@@ -138,7 +138,7 @@ count_matrix <- join_all(gene_counts.list, by='ensembl_gene_id_version', type='l
 colnames(count_matrix) <- c("ensembl_gene_id_version",sample_data$sample_id)
 rownames(count_matrix) <- count_matrix$ensembl_gene_id_version
 
-## DIfferential expression analysis
+## Differential expression analysis
 library(DESeq2)
 count_matrix$ensembl_gene_id_version <- NULL
 
@@ -161,7 +161,7 @@ write.table(results,file=paste0(outdir,"gene_counts/degs_deseq2.txt"),quote = FA
 ###EXON ANALYSIS
 #######################
 print("###################")
-print("##### DASiRe Step 6 of 7: DEG analysis deseq2 ######")
+print("##### DASiRe Step 6 of 7: Differential exon usage with DEXSeq ######")
 print("###################")
 
 dir.create(paste0(outdir,"exon_counts/"), showWarnings = FALSE)
